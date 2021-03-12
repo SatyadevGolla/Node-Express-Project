@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First-Try</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<center> <h1> Welcome to Movies from MongoDB </h1> </center>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Title</th>
+        <th scope="col">Antagonist</th>
+        <th scope="col">Year</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <% moviesList.forEach(m => {%>
+
+        <tr>
+            <th scope="row"> <%= m._id %> </th>
+            <td> <%= m.title %> </td>
+            <td> <%= m.Antagonist %> </td>
+            <td> <%= m.year %> </td>
+        </tr>
+
+    <%})%>
+
+    </tbody>
+</table>
+
+</body>
+</html>
+
+
